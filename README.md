@@ -25,8 +25,7 @@ mujoco_rangefinder:
 To configure the plugin:
 
 mujoco_rangefinder:
-
-  ros__parameters:
+ros__parameters:
     test_name: MujocoRos2SensorsName
     rangefinder: 
       - rfsensor
