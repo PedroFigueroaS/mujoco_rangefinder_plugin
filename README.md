@@ -14,25 +14,16 @@ To use in a simulation involving a Franka Emika Panda robot
 
 To work in a single manipulator, in multipanda_ros2 packages, inside franka_bringup/config/sim, modify `single_sim_controllers.yaml` as follows:
 
-mujoco_server:
-  ros__parameters:
-    MujocoPlugins:
-      names:
-        - mujoco_rangefinder    <-Line to find the rangefinder plugin package
-        - mujoco_ros2_control
-      mujoco_rangefinder:       
-        type: mujoco_ros::sensors::MujocoRosRangeFinder    <-Line to define the type of namespace referred to the rangefinder plugin
-      mujoco_ros2_control:
-        type: mujoco_ros2_control::MujocoRos2ControlPlugin
-        hardware:
-          type: mujoco_ros_control/RobotHW
-          control_period: 0.001
-        params:
-          namespace: ""
-          robot_description_node: "robot_state_publisher"
-          robot_description: "robot_description"
-          
-          
+Under label names:
+- mujoco_rangefinder
+
+Configuring mujoco_rangefinder:
+
+mujoco_rangefinder:       
+        type: mujoco_ros::sensors::MujocoRosRangeFinder
+
+To configure the plugin:
+
 mujoco_rangefinder:     <-Configure the plugin
   ros__parameters:
     test_name: MujocoRos2SensorsName
