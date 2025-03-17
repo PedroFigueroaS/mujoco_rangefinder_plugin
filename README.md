@@ -24,11 +24,12 @@ mujoco_rangefinder:
 
 To configure the plugin:
 
-mujoco_rangefinder:     <-Configure the plugin
+mujoco_rangefinder:
+
   ros__parameters:
     test_name: MujocoRos2SensorsName
     rangefinder: 
-      - rfsensor <-rangefinder site name to define in the Franka Emika Panda mujoco .xml file
+      - rfsensor
     rfsensor:
       rf_count: 4 <-Number of sensor attached to the robot
       
