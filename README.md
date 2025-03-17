@@ -40,6 +40,7 @@ Inside the multipanda_ros2 packages, go to franka_description/mujoco/franka/pand
 
 Search in panda.xml file the `panda_link5` body name, under this line add the rangefinder site name as follows:
 
+        <body name="panda_link5" pos="-0.0825 0.384 0" quat="1 -1 0 0" gravcomp="1">
          <site name="rfsensor0" pos="0.05 -0.05 -0.192" quat="0.7071 0.7071 0 0"/>
          <site name="rfsensor1" pos="0.05 -0.05 -0.182" quat="0.7071 0.7071 0 0"/>
          <site name="rfsensor2" pos="0.05 -0.05 -0.172" quat="0.7071 0.7071 0 0"/>
@@ -54,7 +55,8 @@ Finally, define the rangefinder sensor as follows
             <rangefinder site="rfsensor3"/>    
     </sensor>
 
-
+## MANIPULATE THE RANGEFINDER DATA
+After launching the command `ros2 launch franka_bringup franka_sim.launch.py unpause:=true`, a topic `rfsensor` is created to subscribe, where the information of the 4 sensors is published
 
       
       
