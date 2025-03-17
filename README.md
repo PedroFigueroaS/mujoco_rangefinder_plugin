@@ -14,7 +14,7 @@ To use in a simulation involving a Franka Emika Panda robot
 
 To work in a single manipulator, in multipanda_ros2 packages, inside franka_bringup/config/sim, modify `single_sim_controllers.yaml` as follows:
 
-Under label names:
+Under label `names` add:
 - mujoco_rangefinder
 
 Configuring mujoco_rangefinder:
