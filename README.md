@@ -47,12 +47,12 @@ Search in panda.xml file the `panda_link5` body name, under this line add the ra
  
 Finally, define the rangefinder sensor as follows
 
- <sensor>
+    <sensor>
     <rangefinder site="rfsensor0"/>
     <rangefinder site="rfsensor1"/>
     <rangefinder site="rfsensor2"/>
-    <rangefinder site="rfsensor3"/>
-  </sensor>
+    <rangefinder site="rfsensor3"/>    
+    </sensor>
 
 
 
