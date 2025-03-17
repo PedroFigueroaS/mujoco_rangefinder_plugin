@@ -56,7 +56,7 @@ Finally, define the rangefinder sensor as follows
     </sensor>
 
 ## MANIPULATE THE RANGEFINDER DATA
-After launching the command `ros2 launch franka_bringup franka_sim.launch.py unpause:=true`, a topic `rfsensor` is created to subscribe, where the information of the 4 sensors is published
+After launching the command `ros2 launch franka_bringup franka_sim.launch.py unpause:=true`, a topic `rfsensor`, of message type `std_msgs/msg/float64_multi_array` is created to subscribe, where the information of the 4 sensors is published
 
       
       
