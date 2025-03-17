@@ -26,11 +26,16 @@ To configure the plugin:
 
 mujoco_rangefinder:
 ros__parameters:
+    
     test_name: MujocoRos2SensorsName
+    
     rangefinder: 
+      
       - rfsensor
+    
     rfsensor:
-      rf_count: 4 <-Number of sensor attached to the robot
+      
+      rf_count: 4
       
 ## MODIFY ROBOT MUJOCO .XML FILE
 
